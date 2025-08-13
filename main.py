@@ -5,7 +5,7 @@ import nest_asyncio
 import os
 import pandas as pd
 
-token = os.getenv("TELEGRAM_BOT_TOKEN")
+bot_token = os.environ.get("TELEGRAM_BOT_TOKEN")
 
 DOC_YEAR, DOC, SCENARIO, VAR_GROUP, VAR, PRED = range(6)
 
