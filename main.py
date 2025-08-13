@@ -4,8 +4,10 @@ from telegram.ext import CallbackContext, Application, CommandHandler, MessageHa
 import nest_asyncio
 import os
 import pandas as pd
+from dotenv import load_dotenv
 
-bot_token = os.environ.get("TELEGRAM_BOT_TOKEN")
+load_dotenv()
+bot_token = os.getenv('TELEGRAM_BOT_TOKEN')
 
 DOC_YEAR, DOC, SCENARIO, VAR_GROUP, VAR, PRED = range(6)
 
