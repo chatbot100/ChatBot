@@ -5,6 +5,9 @@ import nest_asyncio
 import os
 import pandas as pd
 from dotenv import load_dotenv
+from background import keep_alive
+
+keep_alive()
 
 nest_asyncio.apply()
 
