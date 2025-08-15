@@ -11,4 +11,4 @@ jobs:
     steps:
       - name: Send request to Replit
         run: |
-          curl -s -o /dev/null "https://ChatBot?v=1.a91324843.repl.co" || echo "Failed to ping"
+          curl -s -o /dev/null "https://chatbot_remember.a91324843.repl.co:8080" || echo "Failed to ping"
